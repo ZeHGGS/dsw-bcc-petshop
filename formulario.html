@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/imagens/pata.png" type="image/x-icon">
+        <title>Formulario - Pepet</title>
+        <link rel="stylesheet" href="assets/css/estiloFormulario.css">
+    </head>
+    <body>
+        <h1>Formulário de agendamento <span>&#128062;</span></h1>
+        <form action="#" method="GET">
+            <label for="nome_pet">Nome do pet <span>&#128054;</span></label>
+            <input type="text" name="nome_pet" maxlength="80" required>
+            <br><br>
+            <label for="raca">Raça <span>&#128021;</span></label>
+            <input type="text" name="raca" maxlength="40" required>
+            <br><br>
+            <label for="serviço">Serviço contratado <span>&#128705;</span></label>
+            <input type="text" name="serviço" maxlength="50" required>
+            <br><br>
+            <label for="data_agendamento">Data e horário do agendamento <span>&#128197;</span></label>
+            <input type="datetime-local" name="data_agendamento">
+            <br><br>
+            <label for="nome_dono">Nome do dono <span>&#128100;</span></label>
+            <input type="text" name="nome_dono" maxlength="80" required>
+            <br><br>
+            <label for="telefone">Telefone para contato <span>&#128222;</span></label>
+            <input type="tel" name="telefone" placeholder="(00) 00000-0000" required>
+            <br><br>
+            <label for="email">Email para contato <span>&#128231;</span></label>
+            <input type="email" name="email" maxlength="100" required>
+            <br><br>
+            <label for="obs_add">Observações adicionais <span>&#128221;</span></label>
+            <textarea name="obs_add" rows="5"></textarea>
+            <br><br>
+            <!-- <input type="submit" value="Enviar" title="Envia as informações para o back-end"> -->
+            <a href="index.html">Enviar</a>
+        </form>
+    </body>
+</html>
