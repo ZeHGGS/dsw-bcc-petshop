@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pepet Pet Shop </title>
+  <title>Pepet Pet Shop</title>
   <link rel="shortcut icon" href="assets/imagens/logo-site.jpg" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/estiloIndex.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,15 +11,16 @@
 </head>
 <body id="topo">
   <header>
-    
-  
     <div class="inicio-imagem">
-        <img src="assets/imagens/logo.png" id="logo-inicio" alt="Logo da Pepet Pet Shop" width="500">
+      <img src="assets/imagens/logo.png" id="logo-inicio" alt="Logo da Pepet Pet Shop">
     </div>
+
+    <!-- Botão hamburguer -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
     <nav>
       <ul>
         <li><a href="#inicio">Início</a></li>
-        <!-- <li><a href="#departamentos">Departamentos</a></li> Adicionei o botão pra rolar pra Departamentos -->
         <li><a href="#produtos">Produtos</a></li>
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#contato">Contato</a></li>
@@ -28,45 +29,20 @@
       </ul>
     </nav>
   </header>
-    <!-- <section id="departamentos">
-        <h2>Nossos Departamentos 🛍️</h2>
-        <div class="departamentos-container">
-          <div class="departamento-card">
-            <span class="menu-departments-item-text">Cachorro</span>
-          </div>
-          <div class="departamento-card">
-            <span class="menu-departments-item-text">Gato</span>
-          </div>
-          <div class="departamento-card">
-            <span class="menu-departments-item-text">Rações</span>
-          </div>
-          <div class="departamento-card">
-            <span class="menu-departments-item-text">Brinquedos</span>
-          </div>
-          <div class="departamento-card">
-            <span class="menu-departments-item-text">Acessórios</span>
-          </div>
-          <div class="departamento-card">
-            <span class="menu-departments-item-text">Higiene e Beleza</span>
-          </div>
-          <div class="departamento-card">
-            <span class="menu-departments-item-text">Promoções</span>
-          </div>
-        </div>
-      </section> -->
+
   <main>
     <section id="inicio" style="background: #f8f8f8; padding: 40px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-        <h2 style="text-align: center; font-family: 'Arial', sans-serif;">Bem-vindo à Pepet! &#128062;</h2>
-        <div class="inicio-container" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-          <div class="inicio-texto" style="max-width: 800px; text-align: center; font-family: 'Arial', sans-serif; font-size: 18px; color: #333;">
-            <p>Na Pepet, cada rabinho abanando e cada miadinho feliz é o que nos motiva todos os dias!  
-            Somos um pet shop apaixonado por oferecer os melhores produtos e serviços para quem mais amamos: nossos pets.  
-            Com carinho, cuidado e qualidade, cuidamos do seu melhor amigo como se fosse nosso.  
-            Vem conhecer esse mundo cheio de amor! &#128150;</p>
-          </div>
+      <h2 style="text-align: center;">Bem-vindo à Pepet! 🐾</h2>
+      <div class="inicio-container" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <div class="inicio-texto" style="max-width: 800px; text-align: center;">
+          <p>Na Pepet, cada rabinho abanando e cada miadinho feliz é o que nos motiva todos os dias!  
+          Somos um pet shop apaixonado por oferecer os melhores produtos e serviços para quem mais amamos: nossos pets.  
+          Com carinho, cuidado e qualidade, cuidamos do seu melhor amigo como se fosse nosso.  
+          Vem conhecer esse mundo cheio de amor! 💖</p>
         </div>
-      </section>
-      
+      </div>
+    </section>
+
     <section id="produtos">
       <h2>Produtos</h2>
       <div class="produtos-container">
@@ -114,9 +90,9 @@
     <section id="contato">
       <h2>Contato</h2>
       <div class="contato-container">
-        <p>&#128222; Telefone: (11) 1234-5678</p>
-        <p>&#128231; E-mail: contato@pepetpetshop.com.br</p>
-        <p>&#128205; Endereço: Rua dos Bichinhos Felizes, 123 - São Paulo/SP</p>
+        <p>📞 Telefone: (11) 1234-5678</p>
+        <p>📧 E-mail: contato@pepetpetshop.com.br</p>
+        <p>📍 Endereço: Rua dos Bichinhos Felizes, 123 - São Paulo/SP</p>
       </div>
       <form class="formulario-contato">
         <input type="text" placeholder="Seu nome" required />
@@ -125,8 +101,11 @@
         <button type="submit">Enviar Mensagem</button>
       </form>
     </section>
-    <p>&copy; 2025 PetShop Fofura &#128062; Todos os direitos reservados.</p>
+    <p>&copy; 2025 PetShop Fofura 🐾 Todos os direitos reservados.</p>
   </footer>
-  <a href="#topo" class="botao-flutuante" title="Voltar ao topo">&#x2B06;</a>
+
+  <a href="#topo" class="botao-flutuante" title="Voltar ao topo">⬆</a>
+
+  <script src="assets/js/petshop.js" defer></script>
 </body>
 </html>
